@@ -1,6 +1,6 @@
 # InlineEditableRelatedList
 
- 🚀
+ 🚀 The code might have useless comments, and useless debugs, I appreciate pull requests/comments/issues. 
 
 A no-code inline editable related list with picklist options free apps/products.
 
