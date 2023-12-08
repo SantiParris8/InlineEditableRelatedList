@@ -31,7 +31,8 @@ To use this tool, simply add the LWCDatatableWithPicklist component to any recor
 ## Feedback
 If you have any questions, suggestions, or issues with this tool, please feel free to contact me or create an issue on GitHub.
 
-![image](https://github.com/SantiParris8/InlineEditableRelatedList/assets/32781893/154e5712-da32-4cf1-8f8b-3e7a8829c842)
+![image](https://github.com/SantiParris8/InlineEditableRelatedList/assets/32781893/066b8eb1-8c12-4bea-b628-3fa550fbe455)
+
 ![SQcqL-min](https://github.com/SantiParris8/InlineEditableRelatedList/assets/32781893/f4e4efb8-d2fe-4a69-a7ba-3b43710692dd)
 
 
