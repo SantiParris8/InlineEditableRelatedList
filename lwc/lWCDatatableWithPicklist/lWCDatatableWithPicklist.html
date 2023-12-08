@@ -1,0 +1,52 @@
+<template>
+    <!-- header -->
+    <div class="slds-tabs_card">
+        <div cla ss="slds-page-header">
+            <div class="slds-page-header__row">
+                <div class="slds-page-header__col-title">
+                    <div class="slds-media">
+                        <div class="slds-media__figure">
+                            <span class="slds-icon_container slds-icon-standard-opportunity">
+                                 <lightning-icon icon-name={icon} alternative-text="recipe" title="recipe"></lightning-icon>
+                            </span>
+                        </div>
+                        <div class="slds-media__body">
+                            <div class="slds-page-header__name">
+                                <div class="slds-page-header__name-title">
+                                    <h1>
+                                         <span> <a href="https://www.linkedin.com/in/santiparris/">Made by Santiago Parris</a></span>
+                                        <span class="slds-page-header__title slds-truncate" title="Recently Viewed">{listName} ({listSize})</span>
+                                    </h1>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- loader -->
+        <div if:true={showSpinner}>
+            <lightning-spinner
+                alternative-text="Loading..." variant="brand">
+            </lightning-spinner>
+        </div>
+        <!-----/loader-------->
+        <div class="slds-var-p-around_small">
+            <template if:true={data}>
+                <c-l-w-c-custom-datatable-type
+                    key-field="Id"
+                    data={data} 
+                    columns={columns} 
+                    onvalueselect={handleSelection}
+                    draft-values={draftValues} 
+                    oncellchange={handleCellChange}
+                    onsave={handleSave}
+                    oncancel={handleCancel}
+                    hide-checkbox-column>
+                </c-l-w-c-custom-datatable-type>
+            </template>
+        </div>
+    </div> <br/>
+
+</template>
